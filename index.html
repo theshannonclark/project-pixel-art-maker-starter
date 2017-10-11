@@ -10,18 +10,18 @@
     <h1>Lab: Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
-    <form class="sizePicker">
-      <label for="input_height">Grid Height:</label>
-      <input type="number" id="input_height" name="height" min="1" value="1">
+    <form class="size-picker">
+      <label for="input-height">Grid Height:</label>
+      <input type="number" id="input-height" name="height" min="1" max="50" value="20" required>
 
-      <label for="input_width">Grid Width:</label>
-      <input type="number" id="input_width" name="width" min="1" value="1">
+      <label for="input-width">Grid Width:</label>
+      <input type="number" id="input-width" name="width" min="1" max="50" value="20" required>
 
-      <input type="submit" value="Set Size">
+      <input type="submit" id="set-size" value="Set Size">
     </form>
 
     <h2>Pick A Color</h2>
-    <input type="color" class="colorPicker">
+    <input type="color" class="color-picker" value="#00B5E7">
 
     <h2>Design Canvas</h2>
     <table class="pixel-canvas"></table>
