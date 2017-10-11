@@ -17,7 +17,7 @@ $submitButton.click(function(event) {
 });
 
 // Change the cell background color when it gets clicked
-$pixelCanvas.on('click', 'tr', function(event) {
+$pixelCanvas.on('click', 'td', function(event) {
   let color = $colorPicker.val();
   $(event.target).css('background-color', color);
 });
